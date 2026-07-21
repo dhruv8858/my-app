@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+
+}
+/* .banner a {
+    text-decoration: none;
+    margin: 20px ;
+}
+
+.banner{
+  height: 70px;
+  background-color: rgba(5, 203, 48, 0.523);
+  margin-top: 20px;
+      padding-top:40px ;
+      display: flex;
+} */
+.rcb-chat-window {
+    width: 550px !important;
+    height: 750px !important;
+}
+
+.rcb-chat-body {
+    height: 650px !important;
+}
+.banner {
+    height: 200px;
+    background-color: rgba(5, 203, 48, 0.523);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    margin: 50px;
+}
+
+.banner img {
+    height: 100px;
+    width: 100px;
+}
+
+.banner ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner ul li {
+    margin-left: 80px;
+}
+
+.banner ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.banner ul li :hover {
+ color: black;
+}
+/* Bot messages */
+.rcb-bot-message {
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+/* User messages */
+.rcb-user-message {
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+/* Option buttons */
+.rcb-options button {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding: 12px 18px !important;
+    min-height: 50px !important;
+}
+
+/* Input field */
+.rcb-input {
+    font-size: 18px !important;
+}

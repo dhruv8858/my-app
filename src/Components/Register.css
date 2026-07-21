@@ -1,0 +1,99 @@
+.registration-wrapper {
+  width: 100%;
+  padding: 60px 0;
+  background: #f3f6f9;
+  display: flex;
+  justify-content: center;
+}
+
+.registration-card {
+  width: 90%;
+  max-width: 1100px;
+  background:rgba(5, 144, 203, 0.186);
+  border-radius: 12px;
+  display: flex;
+  padding: 30px;
+}
+
+/* LEFT SECTION */
+.registration-left {
+  width: 35%;
+  background: linear-gradient(180deg, #e6f4ff, #9fd3f5);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-left img {
+  width: 80%;
+}
+
+/* RIGHT SECTION */
+.registration-right {
+  width: 65%;
+  padding: 20px 30px;
+  ;
+}
+
+.registration-right h2 {
+  color: #0b4da2;
+  margin-bottom: 5px;
+}
+
+.registration-right p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+form {
+  background: #f6f9fc;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdfe3;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cfd6de;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 70px;
+  resize: none;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row div {
+  width: 100%;
+}
+
+.submit-btn {
+  background: #0b4da2;
+  color: white;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
