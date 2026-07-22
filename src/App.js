@@ -8,8 +8,10 @@ import TsIcon from "../src/TS.jpeg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ChatBot from 'react-chatbotify';
 import LimConnector ,{OpenaiProvider}from '@rcb-plugins/llm-connector';
+import { useState } from 'react';
 
 function App() {
+  const [showRegister, setShowRegister] = useState(true);
 const settings = {
   general: {
     embedded: false,
@@ -44,23 +46,43 @@ const flow =
        await params.injectMessage(reply); }, options: ["I have more questions"],
         path: "start",
          chatDisabled: true, }, };
+         
   return (
    
-    <BrowserRouter>
+
+    
+    <BrowserRouter basename="/my-app">
        <div className="App">
 
         <div className='banner'>
          <img src={TsIcon} />
          <ul>
-        <li><Link to="/home">Home</Link></li>  
+        <li><Link to="/">Home</Link></li>  
         <li><Link to="/course">Course</Link></li> 
         <li><Link to="/Registration">Registration</Link></li>
          </ul>
         </div>
         
+        
+{showRegister && (
+  <div className="overlay">
+    <div className="popup">
+      <button
+        className="close-btn"
+        onClick={() => setShowRegister(false)}
+      >
+       <b> Close</b>
+      </button>
+
+      <Register />
+    </div>
+  </div>
+)}
+
+
 
         <Routes>
-          <Route path='/home' element={<Home/>} />
+          <Route path='/' element={<Home/>} />
           <Route path='/course' element={<Course/>} />
           <Route path='/Registration' element={<Register/>} />
         </Routes>
@@ -70,7 +92,6 @@ const flow =
   settings={settings}
 />
 
-{/* <ChatBot flow={flow} plugins={[LimConnector()]}/> */}
     </div>
     </BrowserRouter>
  
